@@ -61,7 +61,7 @@
 
 <!-- Main Content -->
         <main class="main-content">
-            
+
             <div class="content-container">
 
                 <section class="main-information-container insurance-container">
@@ -139,50 +139,7 @@
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="/path/to/js.cookie.js"></script>
-        <script>
-            $(document).ready(function(){
-
-                $('.menu').click(function () {
-                  $(".header-nav").toggle();
-                  $(".overlay").fadeToggle(300);
-                  if ($('body').hasClass('lock-scroll')) {
-                     $('body').removeClass('lock-scroll');
-                    }
-                  else {
-                      $('body').addClass('lock-scroll');
-                    }
-                });
-
-                $('.overlay').click(function () {
-                    $(".overlay").hide();
-                    $(".header-nav").toggle();
-                    $('#menutoggle').prop('checked', false);
-                    $('body').removeClass('lock-scroll');
-                });
-
-                $("#drop-down-toggle-evaluation-types").click(function () {
-                    $("#drop-down-toggle-evaluation-reasons").prop( "checked", false );
-                    $("#drop-down-toggle-legislation").prop( "checked", false );
-                });
-
-                $("#drop-down-toggle-evaluation-reasons").click(function () {
-                    $("#drop-down-toggle-evaluation-types").prop( "checked", false );
-                    $("#drop-down-toggle-legislation").prop( "checked", false );
-                });
-
-                $("#drop-down-toggle-legislation").click(function () {
-                    $("#drop-down-toggle-evaluation-reasons").prop( "checked", false );
-                    $("#drop-down-toggle-evaluation-types").prop( "checked", false );
-                });
-
-                $(".main-content, .hero-image").click(function () {
-                    $("#drop-down-toggle-evaluation-reasons").prop( "checked", false );
-                    $("#drop-down-toggle-evaluation-types").prop( "checked", false );
-                    $("#drop-down-toggle-legislation").prop( "checked", false );
-                });
-
-            });
-        </script>
+        <script src="../js/jquery.js"></script>
     </body>
 
 </html>
